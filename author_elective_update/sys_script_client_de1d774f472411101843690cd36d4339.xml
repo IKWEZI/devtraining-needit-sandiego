@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Incident submission prohibition</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+	var caller= g_form.getReference('caller_id', getCallerID);
+	
+	function getCallerID(caller){
+		
+		if (caller.user_name === 'employee'){
+			alert("You can not submit Incident for Joe Employee" );
+			return false;
+		}
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-12 14:34:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de1d774f472411101843690cd36d4339</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>Incident submission prohibition</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_de1d774f472411101843690cd36d4339</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 16:40:43</sys_updated_on>
+        <table>incident</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>dccd0673dbc2a0d0b847ac44d49619bf</instance_id>
+        <instance_name>dev106340</instance_name>
+        <name>sys_script_client_de1d774f472411101843690cd36d4339</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Incident submission prohibition&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+   //Type appropriate comment here, and begin script below
+	var caller= g_form.getReference('caller_id', getCallerID);
+	
+	function getCallerID(caller){
+		
+		if (caller.user_name === 'employee'){
+			alert("You can not submit Incident for Joe Employee" );
+			return false;
+		}
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-12 14:34:41&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;de1d774f472411101843690cd36d4339&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;Incident submission prohibition&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_de1d774f472411101843690cd36d4339&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-12 16:40:43&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-142158130</payload_hash>
+        <record_name>Incident submission prohibition</record_name>
+        <reverted_from/>
+        <source>bd12572047a411101843690cd36d4307</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-12 16:40:43</sys_created_on>
+        <sys_id>aa4a501b47a411101843690cd36d431a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181f348ce830000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 16:40:43</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>a24a501b5fa4111064757c2e0c71d61a</update_guid>
+        <update_guid_history>a24a501b5fa4111064757c2e0c71d61a:-142158130,65c854d709a4111090ccef42882bfdd1:671858622,2fa41cd34fa411101009c976af617fcf:-1920574596,dfa2d453f6a4111068739984aaa2a9b8:-1627361680,62429c13f1a411105888e1f28a69e897:-1773465778,66c11013bfa41110edd5c80aca965f3d:-2070708431,d66d8c1f57641110d65396507bb2ce6d:402408855,3f9744d77a641110c68de497f3863a7b:378906826,b845c8179c641110e499c14924214b90:-2108720685,40a4c0d390641110c8a20b9a0b0129f2:378906826,6af200d3906411107ff585157af3ffb9:-557965990,a0b04c137c641110b7b16a5862cfbbf4:1330703278,446088132164111022895b44ab20630d:875405916,b4308413ca641110863d10b1f5f29a69:-2100772394,515f3b8f962411100a0f2ec1a44e9099:1501774824,143e374f2f2411106e70c646f58dc6f0:731027309,487d378fe1e011101a588124c3dfc3cb:-856995648</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-13 16:00:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>a26423a693ef4f17a19bcb210de59291</sys_id>
+        <sys_metadata>de1d774f472411101843690cd36d4339</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Incident submission prohibition</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="Incident">7ca8ccf121920110a866589604c20d16</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_client_de1d774f472411101843690cd36d4339</sys_update_name>
+        <sys_update_version display_value="sys_script_client_de1d774f472411101843690cd36d4339">aa4a501b47a411101843690cd36d431a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 16:00:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
